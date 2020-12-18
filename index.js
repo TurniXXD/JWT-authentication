@@ -34,7 +34,8 @@ app.use(express.json());
 //Route Middlewares
 //everything in authRoute will have this prefix /api/user
 app.use('/api/user', authRoute);
-app.use('api/posts', postRoute);
+app.use('/api/posts', postRoute);
+
 
 
 app.listen(3033, () => console.log('Server Up and running'));
