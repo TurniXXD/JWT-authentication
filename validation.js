@@ -8,7 +8,7 @@ const registerValidation = data => {
 		//Joi => type string, min chars 6, is required
 		name: Joi.string()
 			.min(6)
-			.required(), 
+			.required(),
 		email: Joi.string()
 			.min(6)
 			.required()

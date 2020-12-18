@@ -30,6 +30,9 @@ db.once('open',() => {
 
 //Middleware
 app.use(express.json());
+app.get('/', (req, res) => {
+	res.send("Hello world!")
+})
 
 //Route Middlewares
 //everything in authRoute will have this prefix /api/user
@@ -38,4 +41,4 @@ app.use('/api/posts', postRoute);
 
 
 
-app.listen(3033, () => console.log('Server Up and running'));
+app.listen(3011, () => console.log('Server Up and running'));
